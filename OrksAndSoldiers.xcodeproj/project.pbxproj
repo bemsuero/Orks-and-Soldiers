@@ -14,6 +14,7 @@
 		C50633171D0DE81D0013E227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C50633151D0DE81D0013E227 /* LaunchScreen.storyboard */; };
 		C50633221D0DE81D0013E227 /* OrksAndSoldiersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50633211D0DE81D0013E227 /* OrksAndSoldiersTests.swift */; };
 		C506332D1D0DE81D0013E227 /* OrksAndSoldiersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506332C1D0DE81D0013E227 /* OrksAndSoldiersUITests.swift */; };
+		C506333B1D0DFC660013E227 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C506333A1D0DFC660013E227 /* Minecraft.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C50633281D0DE81D0013E227 /* OrksAndSoldiersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrksAndSoldiersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C506332C1D0DE81D0013E227 /* OrksAndSoldiersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrksAndSoldiersUITests.swift; sourceTree = "<group>"; };
 		C506332E1D0DE81D0013E227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C506333A1D0DFC660013E227 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		C506330B1D0DE81D0013E227 /* OrksAndSoldiers */ = {
 			isa = PBXGroup;
 			children = (
+				C506333A1D0DFC660013E227 /* Minecraft.ttf */,
 				C506330C1D0DE81D0013E227 /* AppDelegate.swift */,
 				C506330E1D0DE81D0013E227 /* ViewController.swift */,
 				C50633101D0DE81D0013E227 /* Main.storyboard */,
@@ -231,6 +234,7 @@
 			files = (
 				C50633171D0DE81D0013E227 /* LaunchScreen.storyboard in Resources */,
 				C50633141D0DE81D0013E227 /* Assets.xcassets in Resources */,
+				C506333B1D0DFC660013E227 /* Minecraft.ttf in Resources */,
 				C50633121D0DE81D0013E227 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
