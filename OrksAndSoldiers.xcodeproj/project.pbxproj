@@ -15,6 +15,9 @@
 		C50633221D0DE81D0013E227 /* OrksAndSoldiersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50633211D0DE81D0013E227 /* OrksAndSoldiersTests.swift */; };
 		C506332D1D0DE81D0013E227 /* OrksAndSoldiersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506332C1D0DE81D0013E227 /* OrksAndSoldiersUITests.swift */; };
 		C506333B1D0DFC660013E227 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C506333A1D0DFC660013E227 /* Minecraft.ttf */; };
+		C506333D1D0E00A70013E227 /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506333C1D0E00A70013E227 /* player.swift */; };
+		C506333F1D0E00F20013E227 /* ork.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506333E1D0E00F20013E227 /* ork.swift */; };
+		C50633411D0E010A0013E227 /* Soldier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50633401D0E010A0013E227 /* Soldier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		C506332C1D0DE81D0013E227 /* OrksAndSoldiersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrksAndSoldiersUITests.swift; sourceTree = "<group>"; };
 		C506332E1D0DE81D0013E227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C506333A1D0DFC660013E227 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		C506333C1D0E00A70013E227 /* player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
+		C506333E1D0E00F20013E227 /* ork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ork.swift; sourceTree = "<group>"; };
+		C50633401D0E010A0013E227 /* Soldier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Soldier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				C50633131D0DE81D0013E227 /* Assets.xcassets */,
 				C50633151D0DE81D0013E227 /* LaunchScreen.storyboard */,
 				C50633181D0DE81D0013E227 /* Info.plist */,
+				C506333C1D0E00A70013E227 /* player.swift */,
+				C506333E1D0E00F20013E227 /* ork.swift */,
+				C50633401D0E010A0013E227 /* Soldier.swift */,
 			);
 			path = OrksAndSoldiers;
 			sourceTree = "<group>";
@@ -260,7 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C506333F1D0E00F20013E227 /* ork.swift in Sources */,
+				C50633411D0E010A0013E227 /* Soldier.swift in Sources */,
 				C506330F1D0DE81D0013E227 /* ViewController.swift in Sources */,
+				C506333D1D0E00A70013E227 /* player.swift in Sources */,
 				C506330D1D0DE81D0013E227 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

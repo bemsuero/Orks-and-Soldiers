@@ -10,6 +10,7 @@
             <string>Minecraft</string>
             <string>Minecraft</string>
             <string>Minecraft</string>
+            <string>Minecraft</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -64,7 +65,6 @@
                                 <state key="normal" image="player1attackbtn"/>
                                 <connections>
                                     <action selector="onPlayerOneAttack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iYI-Do-ljN"/>
-                                    <action selector="playerOneAttackButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AL3-Rz-Mqq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUz-4h-LZ8">
@@ -96,6 +96,23 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMf-kt-WZ2">
+                                <rect key="frame" x="250" y="20" width="101" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="erS-ee-O2d"/>
+                                    <constraint firstAttribute="width" constant="101" id="tnM-Xl-38b"/>
+                                </constraints>
+                                <state key="normal" title="Reset" image="text-holder"/>
+                                <connections>
+                                    <action selector="onReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kFb-wN-GHB"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="RESET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKg-Kh-mi4">
+                                <rect key="frame" x="269" y="40" width="62" height="21"/>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -104,14 +121,17 @@
                             <constraint firstItem="aJS-Nf-ieU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="62z-JC-6Hz"/>
                             <constraint firstItem="KQ6-0T-sCV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-7" id="6Ze-6m-Sm0"/>
                             <constraint firstAttribute="trailing" secondItem="8iN-qZ-ckf" secondAttribute="trailing" id="CrD-UT-vzB"/>
+                            <constraint firstItem="DMf-kt-WZ2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gau-Ef-cdE"/>
                             <constraint firstItem="fAW-AA-1c6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JAN-9c-1wJ"/>
                             <constraint firstItem="hb5-kB-FJx" firstAttribute="top" secondItem="KQ6-0T-sCV" secondAttribute="bottom" constant="33" id="NBC-8J-oCo"/>
+                            <constraint firstItem="DMf-kt-WZ2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="OJg-fM-8eO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uUz-4h-LZ8" secondAttribute="trailing" constant="-6" id="QJR-fr-LGP"/>
                             <constraint firstItem="8aD-we-SNx" firstAttribute="centerX" secondItem="IFH-PJ-a2v" secondAttribute="centerX" id="WPf-Qh-HWa"/>
                             <constraint firstItem="neZ-t6-jbk" firstAttribute="centerY" secondItem="uUz-4h-LZ8" secondAttribute="centerY" id="YYZ-gT-nAd"/>
                             <constraint firstItem="rIh-Xp-uFR" firstAttribute="centerY" secondItem="KQ6-0T-sCV" secondAttribute="centerY" id="ZgY-dw-B0s"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8iN-qZ-ckf" secondAttribute="bottom" id="aKL-8Z-die"/>
                             <constraint firstAttribute="bottomMargin" secondItem="IFH-PJ-a2v" secondAttribute="bottom" constant="-27" id="dk7-cN-1yt"/>
+                            <constraint firstItem="CKg-Kh-mi4" firstAttribute="centerY" secondItem="DMf-kt-WZ2" secondAttribute="centerY" id="e4f-58-Wrr"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aJS-Nf-ieU" secondAttribute="bottom" constant="74" id="gKg-av-zbZ"/>
                             <constraint firstItem="fAW-AA-1c6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="5" id="hd4-4t-OQc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hb5-kB-FJx" secondAttribute="bottom" constant="74" id="mlL-9p-WAw"/>
@@ -119,6 +139,7 @@
                             <constraint firstItem="aJS-Nf-ieU" firstAttribute="top" secondItem="uUz-4h-LZ8" secondAttribute="bottom" constant="37" id="o6l-aV-OJf"/>
                             <constraint firstItem="neZ-t6-jbk" firstAttribute="centerX" secondItem="uUz-4h-LZ8" secondAttribute="centerX" id="q6P-Fa-JY9"/>
                             <constraint firstItem="rIh-Xp-uFR" firstAttribute="centerX" secondItem="KQ6-0T-sCV" secondAttribute="centerX" id="sLt-EV-r1l"/>
+                            <constraint firstItem="CKg-Kh-mi4" firstAttribute="centerX" secondItem="DMf-kt-WZ2" secondAttribute="centerX" id="tvi-xS-bxk"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fAW-AA-1c6" secondAttribute="bottom" id="uQu-sB-TGW"/>
                             <constraint firstItem="hb5-kB-FJx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="v3L-E5-wMj"/>
                             <constraint firstAttribute="trailing" secondItem="fAW-AA-1c6" secondAttribute="trailing" id="vgs-RY-3DC"/>
@@ -132,6 +153,8 @@
                         <outlet property="playerTwoAttack" destination="uUz-4h-LZ8" id="St7-OQ-zM2"/>
                         <outlet property="playerTwoImage" destination="aJS-Nf-ieU" id="Z22-Zc-siq"/>
                         <outlet property="playerTwoLabel" destination="neZ-t6-jbk" id="WJu-cL-esS"/>
+                        <outlet property="resetButton" destination="DMf-kt-WZ2" id="JZH-j4-nnl"/>
+                        <outlet property="resetLabel" destination="CKg-Kh-mi4" id="S2P-u6-bza"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
